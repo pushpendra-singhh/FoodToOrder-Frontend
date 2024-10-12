@@ -1,0 +1,126 @@
+<!-- <p>banner works!</p> -->
+<div class="row">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid" >
+      <img src="../../assets/images/logo.jpg" height="100px" width="150px"/>
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" [routerLink]="'/'">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" [routerLink]="'/restaurants'">Restaurants</a>
+           
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" [routerLink]="'/aboutus'">About </a>
+          <li class="nav-item">
+            <a class="nav-link active" [routerLink]="'/contacts'">Contact </a>
+          </li>
+       
+    
+          <li class="nav-item">
+            <a  *ngIf="true" class="nav-link active" [routerLink]="'/admin'">Admin</a>
+           
+          </li>
+          <li class="nav-item">
+            <a  *ngIf="true" class="nav-link active" [routerLink]="'/rowner'">Rest-Owner</a>
+           
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link active" [routerLink]="'/output'">Output</a>
+          </li> -->
+
+          <li class="nav-item">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signIn-button">
+             Sign-In
+            </button>
+            <div class="modal fade" id="signIn-button" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content" >
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Sign-In</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <app-demo-form></app-demo-form>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#register-button">
+              Sign-Up
+            </button>
+            <div class="modal fade" id="register-button" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content" style="background-color:#eafaf1;">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Sign-Up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+              
+                  <app-register-form></app-register-form>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cart-button">
+              Cart
+            </button>
+            <div class="modal" id="cart-button" tabindex="-1">
+              <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #C2B9B0;">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Carts</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <app-card></app-card>
+                  <!-- <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                  </div> -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" (click)="do_checkout()" >Checkout</button>
+                    <button type="button" class="btn btn-primary" (click)="clear_cart()" >Clear</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- <button type="button" class="btn btn-primary">
+            Notifications <span class="badge text-bg-secondary">4</span>
+          </button> -->
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary" (click)="clearLocalStorage()">Log Out</button>
+    <!-- <li class="nav-item">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signIn-button">
+       jwt login
+      </button>
+      <div class="modal fade" id="signIn-button" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" >
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">JWT Exmaple</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <app-demo-form></app-demo-form>
+          </div>
+        </div>
+      </div> -->
+    <!-- </li> -->
+</nav>
+</div>
+
+
+

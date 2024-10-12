@@ -1,0 +1,49 @@
+<!-- <style>
+  table {
+    opacity: 0.8;
+  }
+</style>
+<div class="row">
+  <table class="table table-hover">
+    <thead style="background-color: rgb(237, 194, 194);">
+      <th>Id</th>
+      <th>Name</th>
+      <th>Image</th>
+      <th>Menu</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let restaurant of restaurants">
+            <td>{{restaurant.id}}</td>
+            <td>{{restaurant.r_Name}}</td>
+            <td>
+              <img [src]="restaurant.r_Img_Path" alt="..." height="200px" width="320px">
+            </td>
+            <td><button class="btn btn-primary" (click)="viewMenu(restaurant.id)">Menu</button></td>
+        </tr>
+    </tbody>
+  </table>
+</div> -->
+
+
+<div class="row">
+  <div class="col-md-4" *ngFor="let restaurant of restaurants | paginate: { itemsPerPage: count, currentPage: p }">
+    <div class="card" >
+      <img class="card-img-top" src="{{restaurant.r_Img_Path}}" alt="Restaurant Image">
+      <div class="card-body">
+        <h5 class="card-title">{{restaurant.r_Name}}</h5>
+        <p class="card-text">Restaurant No: {{restaurant.id}}</p>
+        <button class="btn btn-primary" (click)="viewMenu(restaurant.id)">Menu</button>
+      </div>
+    </div>
+  </div>
+  <div class="text-right">
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  </div>
+</div>
+
+
+
+
+
+
+

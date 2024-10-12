@@ -1,0 +1,123 @@
+<!-- <p>user-add works!</p> -->
+
+<button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
+    {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
+</button>
+<mat-stepper [linear]="!isLinear" #stepper style="background-color: #c2cad0;">
+    <mat-step [stepControl]="firstFormGroup">
+      <form [formGroup]="firstFormGroup" (ngSubmit)="saveFirstStepData(firstFormGroup)">
+        <ng-template matStepLabel>Fill out User Details</ng-template>
+        <mat-form-field>
+          <mat-label>First Name</mat-label>
+          <input matInput placeholder="first name" formControlName="first_name" required>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Middle Name</mat-label>
+            <input matInput placeholder="middle name" formControlName="middle_name" required>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Last Name</mat-label>
+            <input matInput placeholder="last name" formControlName="last_name" required>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="email" formControlName="email" required>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="password" formControlName="password" required>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>DOB</mat-label>
+            <input matInput placeholder="date of birth" formControlName="dob" required>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Mobile</mat-label>
+            <input matInput placeholder="mobile" formControlName="mobile" required>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Role</mat-label>
+            <input matInput placeholder="User/Admin/restaurnt_owner" formControlName="role" required>
+        </mat-form-field>
+        <div>
+            <button mat-raised-button matStepperNext type="submit" [disabled]="!firstFormGroup.valid">Save</button>
+        </div>
+        <div>
+          <button mat-button matStepperNext [disabled]="!firstFormGroup.valid">Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup" label="Fill out Address Details">
+        <form [formGroup]="secondFormGroup" (ngSubmit)="saveSecondStepData(secondFormGroup)">
+          <mat-form-field class="col-4">
+            <input matInput formControlName="house_No" placeholder="House number" required>
+          </mat-form-field>
+          <mat-form-field class="col-4">
+            <input matInput formControlName="street" placeholder="Street" required> 
+          </mat-form-field>
+          <mat-form-field class="col-4">
+            <input matInput formControlName="area" placeholder="Area" required>
+          </mat-form-field>
+          <mat-form-field class="col-4">
+            <input matInput formControlName="city" placeholder="City" required>
+          </mat-form-field>
+          <mat-form-field class="col-4">
+            <input matInput formControlName="country" placeholder="Country" required>
+          </mat-form-field>
+          <mat-form-field class="col-4">
+            <input matInput formControlName="pincode" placeholder="Pincode" required>
+          </mat-form-field>
+          <div>
+            <button mat-raised-button matStepperNext type="submit" class="my-2" [disabled]="!secondFormGroup.valid">Save</button>
+          </div>
+          <div>
+            <button mat-button matStepperPrevious >Back</button>
+            <button mat-button matStepperNext [disabled]="!secondFormGroup.valid">Next</button>
+          </div>
+        </form>
+      </mat-step>
+      
+    <mat-step>
+        <ng-template matStepLabel>Done</ng-template>
+        <p>You are now done.</p>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button (click)="stepper.reset()">Reset</button>
+        </div>
+    </mat-step>
+</mat-stepper>
+
+
+<!-- <table>
+    <thead>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Middle Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>DOB</th>
+        <th>Mobile</th>
+        <th>Address Details</th>
+        <th>Role</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let u of addedUsers">
+            <td>{{u.id}}</td>
+            <td>{{u.first_name}}</td>
+            <td>{{u.middle_name}}</td>
+            <td>{{u.last_name}}</td>
+            <td>{{u.email}}</td>
+            <td>{{u.password}}</td>
+            <td>{{u.dob}}</td>
+            <td>{{u.mobile}}</td>
+            <td>
+                House No : {{u.address.house_No}}<br/>
+                {{u.address.street}},{{u.address.area}}<br/>
+                {{u.address.city}},{{u.address.country}}<br/>
+                {{u.address.pincode}}
+            </td>
+            <td>{{u.role}}</td>
+        </tr>
+    </tbody>
+</table> -->

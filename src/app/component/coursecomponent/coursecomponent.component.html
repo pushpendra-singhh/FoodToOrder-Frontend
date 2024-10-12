@@ -1,0 +1,28 @@
+<!-- <p>coursecomponent works!</p>
+<div class="container" *ngIf="show_course">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let c of course"> 
+        <div class="card">
+          <div class="card-header">
+            {{c.name}}
+          </div>
+          <div class="card-body">
+            <p class="card-text">{{c.description}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<button>
+    <a (click)="show()">show course</a>
+</button>
+<form #course_form (ngSubmit)="onSubmit(course_form.value)">
+    <label for="id">ID:</label>
+    <input type="number" id="id" name="id" [(ngModel)]="course.id"><br><br>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" [(ngModel)]="course.name"><br><br>
+    <label for="description">Course Description:</label>
+    <input type="text" id="description" name="description" [(ngModel)]="course.description"><br><br>
+    <button type="submit" name="add">Add Course</button>
+ </form>
+  -->

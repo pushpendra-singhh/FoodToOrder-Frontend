@@ -1,0 +1,560 @@
+{
+  "restaurants": [
+    {
+      "id": 1,
+      "r_Name": "Banglore dosa special",
+      "r_Img_Path": "assets/images/dosa_image.jpeg",
+      "r_Addresses": [
+        {
+          "id": 1,
+          "house_No": 232,
+          "street": "5th Cross",
+          "area": "Mvm",
+          "city": "Blr",
+          "country": "India",
+          "pincode": "333301"
+        },
+        {
+          "id": 2,
+          "house_No": 254,
+          "street": "8th Cross",
+          "area": "Indira Nagar",
+          "city": "Blr",
+          "country": "India",
+          "pincode": "325624"
+        }
+      ],
+      "r_Dishes": [
+        {
+          "id": 1,
+          "d_Name": "Veg-Biryani",
+          "d_Cost": 145,
+          "d_Description": "tasty biryani with lot of veg",
+          "d_Category": "Lunch/Dinner",
+          "d_Composition": "Rice and Veg",
+          "d_Type": "Veg"
+        },
+        {
+          "id": 2,
+          "d_Name": "Idli",
+          "d_Cost": 45,
+          "d_Description": "soft idli with sambar and chutney",
+          "d_Category": "Breakfast",
+          "d_Composition": "rice and Veg",
+          "d_Type": "Veg"
+        },
+        {
+          "id": 3,
+          "d_Name": "Masala Dosa",
+          "d_Cost": 80,
+          "d_Description": "crunchy dosa with potato and veg",
+          "d_Category": "Breakfast",
+          "d_Composition": "Bread and Veg",
+          "d_Type": "Veg"
+        }
+      ],
+      "category_id": 3
+    },
+    {
+      "id": 2,
+      "r_Name": "Annapurna tiffin centre",
+      "r_Img_Path": "assets/images/annapurna_tiffin_centre.jpeg",
+      "r_Addresses": [
+        {
+          "id": 1,
+          "house_No": 23,
+          "street": "1st Cross",
+          "area": "Mvm",
+          "city": "Blr",
+          "country": "India",
+          "pincode": "332533"
+        },
+        {
+          "id": 2,
+          "house_No": 95,
+          "street": "9th Cross",
+          "area": "Indira Nagar",
+          "city": "Blr",
+          "country": "India",
+          "pincode": "985644"
+        }
+      ],
+      "r_Dishes": [
+        {
+          "id": 1,
+          "d_Name": "Masala Dosa",
+          "d_Cost": 60,
+          "d_Description": "best dosa with potato and veg",
+          "d_Category": "Breakfast",
+          "d_Composition": "Bread and Veg",
+          "d_Type": "Veg"
+        },
+        {
+          "id": 2,
+          "d_Name": "Idli",
+          "d_Cost": 30,
+          "d_Description": "Make of rice power and veg",
+          "d_Category": "Breakfast",
+          "d_Composition": "Bread and Veg",
+          "d_Type": "Veg"
+        },
+        {
+          "id": 3,
+          "d_Name": "Lemon-rice",
+          "d_Cost": 40,
+          "d_Description": "tasty lemon rice with lot of chutney",
+          "d_Category": "Lunch/Dinner",
+          "d_Composition": "Rice and Veg",
+          "d_Type": "Veg"
+        }
+      ],
+      "category_id": 3
+    },
+    {
+      "id": 3,
+      "r_Name": "Weekenzo restaurants",
+      "r_Img_Path": "assets/images/weekenzo.jpeg",
+      "r_Addresses": [
+        {
+          "id": 1,
+          "house_No": "91",
+          "street": "7th Main Road",
+          "area": "Mvm",
+          "city": "Bangalore",
+          "country": "India",
+          "pincode": "560329"
+        }
+      ],
+      "r_Dishes": [
+        {
+          "id": 1,
+          "d_Name": "Fried Chicken Wings",
+          "d_Cost": "400",
+          "d_Description": "tasty fried chiecken wings with chilli speice",
+          "d_Category": "Lunch/Dinner",
+          "d_Composition": "Chinken wings , besen and chilli power",
+          "d_Type": "non-veg"
+        }
+      ],
+      "category_id": 6
+    },
+    {
+      "id": 4,
+      "r_Name": "Laxmi Sweet & Snacks House",
+      "r_Img_Path": "assets/images/Laxmi_misthan_bhandar.jpg",
+      "r_Addresses": [
+        {
+          "id": 1,
+          "house_No": "321",
+          "street": "4th Cross",
+          "area": "whitestreet",
+          "city": "Blr",
+          "country": "India",
+          "pincode": "569611"
+        },
+        {
+          "id": 2,
+          "house_No": "927",
+          "street": "5th Cross",
+          "area": "Indira Nagar",
+          "city": "Blr",
+          "country": "India",
+          "pincode": "360012"
+        },
+        {
+          "id": 3,
+          "house_No": "168",
+          "street": "6th Cross",
+          "area": "Indira Nagar",
+          "city": "Blr",
+          "country": "India",
+          "pincode": "560012"
+        }
+      ],
+      "r_Dishes": [
+        {
+          "id": 1,
+          "d_Name": "Veg Burgar",
+          "d_Cost": "80",
+          "d_Description": "tasty veg burgar",
+          "d_Category": "snacks",
+          "d_Composition": "bread and vegitable",
+          "d_Type": "veg"
+        },
+        {
+          "id": 2,
+          "d_Name": "Ras Malai",
+          "d_Cost": "560",
+          "d_Description": "tasty sweet",
+          "d_Category": "sweet",
+          "d_Composition": "milk and dry fruits",
+          "d_Type": "veg"
+        }
+      ],
+      "category_id": 5
+    },
+    {
+      "id": 5,
+      "r_Name": "Maxim Indo-chinese Restaurent",
+      "r_Img_Path": "assets/images/maxim indo_chinese.jpg",
+      "r_Addresses": [
+        {
+          "id": 1,
+          "house_No": "136",
+          "street": "elecronic city",
+          "area": "Indira Nagar",
+          "city": "Bangalore",
+          "country": "India",
+          "pincode": "566327"
+        }
+      ],
+      "r_Dishes": [
+        {
+          "id": 1,
+          "d_Name": " chinese noodles",
+          "d_Cost": "299",
+          "d_Description": "tasty noodles",
+          "d_Category": "Lunch/Dinner",
+          "d_Composition": "noodles and vegitable",
+          "d_Type": "veg"
+        },
+        {
+          "id": 2,
+          "d_Name": "Burger",
+          "d_Cost": "149",
+          "d_Description": "combination of veg and bread with lot of tasty speices",
+          "d_Category": "Snacks",
+          "d_Composition": "Soft bread, green veg and souce and chicken",
+          "d_Type": "veg/non-veg"
+        },
+        {
+          "id": 3,
+          "d_Name": "Coffee",
+          "d_Cost": "49",
+          "d_Description": "tasty coffee",
+          "d_Category": "anytime",
+          "d_Composition": "milk and coffee powder",
+          "d_Type": "veg"
+        }
+      ],
+      "category_id": 4
+    },
+    {
+      "id": 6,
+      "r_Name": "NH88 Best Taste",
+      "r_Img_Path": "https://shorturl.at/jtKX0",
+      "r_Addresses": [
+        {
+          "id": 1,
+          "house_No": "fghhfgh",
+          "street": "fghgh",
+          "area": "jhjhjhjh",
+          "city": "fhhgfhfgh",
+          "country": "India",
+          "pincode": "fhghfgh"
+        }
+      ],
+      "r_Dishes": [
+        {
+          "id": 1,
+          "d_Name": "combo meal",
+          "d_Cost": "151",
+          "d_Description": "full meal",
+          "d_Category": "heavy food",
+          "d_Composition": "veg",
+          "d_Type": "veg"
+        }
+      ],
+      "category_id": 1
+    },
+    {
+      "id": 7,
+      "r_Name": "gfgfg",
+      "r_Img_Path": "gfgfg",
+      "r_Addresses": [],
+      "r_Dishes": [
+        {
+          "id": 1,
+          "d_Name": "gfgf",
+          "d_Cost": "45454",
+          "d_Description": "dfdfsa",
+          "d_Category": "3fdf",
+          "d_Composition": "dssfg",
+          "d_Type": "fggf"
+        }
+      ],
+      "category_id": 0
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "first_name": "Pankaj",
+      "middle_name": "",
+      "last_name": "kumar",
+      "email": "pankajdbg@gmail.com",
+      "password": "abc@1234",
+      "dob": "11th march 2000",
+      "mobile": "9562347592",
+      "address": {
+        "id": 2,
+        "house_No": 25,
+        "street": "8th Cross",
+        "area": "darbanga",
+        "city": "bihar",
+        "country": "India",
+        "pincode": "495623"
+      },
+      "role": "user"
+    },
+    {
+      "id": 2,
+      "first_name": "Harsh",
+      "middle_name": "",
+      "last_name": "patel",
+      "email": "harshpatel@gmail.com",
+      "password": "abc@1234",
+      "dob": "12th feburary 2000",
+      "mobile": "9562365896",
+      "address": {
+        "id": 0,
+        "house_No": "25",
+        "street": "4th Cross",
+        "area": "daman",
+        "city": "dadra and nagar haveli",
+        "country": "India",
+        "pincode": "956236"
+      },
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "first_name": "Utkarsh",
+      "middle_name": "",
+      "last_name": "Shankar",
+      "email": "utkarshshankar456@gmail.com",
+      "password": "abc@1234",
+      "dob": "14th April 2000",
+      "mobile": "7050847592",
+      "address": {
+        "id": 0,
+        "house_No": "25",
+        "street": "8th Cross",
+        "area": "Nalanda",
+        "city": "bihar",
+        "country": "India",
+        "pincode": "443322"
+      },
+      "role": "user"
+    },
+    {
+      "id": 4,
+      "first_name": "Rahul",
+      "middle_name": "",
+      "last_name": "kumar",
+      "email": "rahulkumar@gmail.com",
+      "password": "abc@1234",
+      "dob": "15th may 2000",
+      "mobile": "9562365896",
+      "address": {
+        "id": 0,
+        "house_No": "527",
+        "street": "walk street",
+        "area": "sikar",
+        "city": "sikar",
+        "country": "India",
+        "pincode": "659823"
+      },
+      "role": "user"
+    },
+    {
+      "id": 5,
+      "first_name": "Dungar",
+      "middle_name": "singh",
+      "last_name": "Rathore",
+      "email": "dungar@gmail.com",
+      "password": "dungar@123",
+      "dob": "4th December 2000",
+      "mobile": "9856236596",
+      "address": {
+        "id": 0,
+        "house_No": "107",
+        "street": "collem street",
+        "area": "sankalim",
+        "city": "goa",
+        "country": "India",
+        "pincode": "659823"
+      },
+      "role": "admin"
+    },
+    {
+      "id": 6,
+      "first_name": "Prnce",
+      "middle_name": "",
+      "last_name": "kumar",
+      "email": "princekr@gmail.com",
+      "password": "abc@1234",
+      "dob": "11th march 2000",
+      "mobile": "9562347592",
+      "address": {
+        "id": 2,
+        "house_No": 25,
+        "street": "8th Cross",
+        "area": "Patna",
+        "city": "bihar",
+        "country": "India",
+        "pincode": "495626"
+      },
+      "role": "Restaurant_owner"
+    },
+    {
+      "id": 7,
+      "first_name": "Hariom",
+      "middle_name": "",
+      "last_name": "saraswat",
+      "email": "hariom@gmail.com",
+      "password": "abc@1234",
+      "dob": "16/10/2000",
+      "mobile": "9562356986",
+      "address": {
+        "id": 3,
+        "house_No": "12",
+        "street": "bell street",
+        "area": "bikaner",
+        "city": "bikaner",
+        "country": "india",
+        "pincode": "652365"
+      },
+      "role": "Restaurant_owner"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "restaurant_id": 3,
+      "order_date": "20/09/2023",
+      "dishes_ids": [
+        3,
+        4
+      ],
+      "num_of_dishes": [
+        2,
+        4
+      ],
+      "user_id": 5,
+      "total_order": 6
+    },
+    {
+      "id": 2,
+      "restaurant_id": 5,
+      "order_date": "05/10/2023",
+      "dishes_ids": [
+        1,
+        5
+      ],
+      "num_of_dishes": [
+        3,
+        5
+      ],
+      "user_id": 2,
+      "total_order": 8
+    },
+    {
+      "id": 3,
+      "restaurant_id": 4,
+      "order_date": "15th November 2023",
+      "dishes_ids": [
+        2,
+        3
+      ],
+      "num_of_dishes": [
+        4,
+        6
+      ],
+      "user_id": 7,
+      "total_order": 10
+    },
+    {
+      "id": 4,
+      "restaurant_id": 2,
+      "order_date": "03/12/2023",
+      "dishes_ids": [
+        1,
+        2,
+        4
+      ],
+      "num_of_dishes": [
+        2,
+        3,
+        5
+      ],
+      "user_id": 6,
+      "total_order": 10
+    },
+    {
+      "id": 5,
+      "restaurant_id": 1,
+      "order_date": "21/12/2023",
+      "dishes_ids": [
+        3,
+        4,
+        5
+      ],
+      "num_of_dishes": [
+        1,
+        2,
+        3
+      ],
+      "user_id": 8,
+      "total_order": 6
+    },
+    {
+      "id": 6,
+      "restaurant_id": 1,
+      "order_date": "01/01/2024",
+      "dishes_ids": [
+        1,
+        2
+      ],
+      "num_of_dishes": [
+        3,
+        4
+      ],
+      "user_id": 9,
+      "total_order": 7
+    },
+    {
+      "id": 7,
+      "restaurant_id": 2,
+      "order_date": "10th February 2024",
+      "dishes_ids": [
+        4,
+        5
+      ],
+      "num_of_dishes": [
+        2,
+        5
+      ],
+      "user_id": 3,
+      "total_order": 7
+    }
+  ],
+  "r_Owner": [
+    {
+      "id": 6,
+      "restaurant_ids": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 7,
+      "restaurant_ids": [
+        4,
+        5,
+        6
+      ]
+    }
+  ]
+}

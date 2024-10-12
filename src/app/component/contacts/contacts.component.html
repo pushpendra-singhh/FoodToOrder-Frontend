@@ -1,0 +1,54 @@
+<h3>Find us on Map</h3>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14464.013697440685!2d-70.99999999999999!3d24.9999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89451ab5034cb7ab%3A0xb600ecf3df7aca4d!2sBermuda%20Triangle!5e0!3m2!1sen!2sin!4v1728704825361!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <br> 
+  <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm.value)" >
+    <br>
+    <h3>Contact Us</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" name="name" required [(ngModel)]="name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" required [(ngModel)]="email">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input type="tel" class="form-control" id="phone" name="phone" required [(ngModel)]="phone">
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea class="form-control" id="message" name="message" required [(ngModel)]="message"></textarea>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="subject">Subject:</label>
+          <select class="form-control" id="subject" name="subject" [(ngModel)]="subject">
+            <option value="general">General Inquiry</option>
+            <option value="feedback">Feedback</option>
+            <option value="complaint">Complaint</option>
+            <option value="partnership">Partnership</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="location">Location:</label>
+          <input type="text" class="form-control" id="location" name="location" [(ngModel)]="location">
+        </div>
+        <div class="form-group">
+          <label for="order_number">Order Number:</label>
+          <input type="text" class="form-control" id="order_number" name="order_number" [(ngModel)]="orderNumber">
+        </div>
+        <!-- <div class="form-group">
+          <label for="attachment">Attachment:</label>
+          <input type="file" class="form-control" id="attachment" name="attachment" [(ngModel)]="attachment">
+        </div> -->
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="!contactForm.form.valid">Submit</button>
+  </form>
+  
+
+  

@@ -1,0 +1,56 @@
+<!-- 
+<form #myForm="ngForm" (ngSubmit)="onSubmit(myForm.value)">
+    <div class="modal-body">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com" [(ngModel)]="emailAddress" name="emailAddress">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="pwd" placeholder="password" [(ngModel)]="pwd" name="pwd">
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </div>
+</form> -->
+<!-- <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm.value)">
+  <div class="modal-body">
+      <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com" [(ngModel)]="emailAddress" name="emailAddress" #username>
+      </div>
+      <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="pwd" placeholder="password" [(ngModel)]="pwd" name="pwd" #password>
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="registerUser_Jwt(username.value,password.value)">Login</button>
+      <button type="submit" class="btn btn-primary" (click)="loginUser_Jwt(username.value,password.value)>Register</button>
+  </div>
+</form> -->
+
+<!-- <form  >
+  <div class="modal-body">
+      <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com"  name="emailAddress" #username>
+      </div>
+      <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="pwd" placeholder="password"  name="pwd" #password>
+      </div>
+      <button class="btn btn-primary" (click)="loginUser_Jwt(username.value,password.value)">Login</button>
+      <button class="btn btn-primary" (click)="registerUser_Jwt(username.value,password.value)">Register</button>
+  </div>
+</form> -->
+<form #myForm="ngForm" (ngSubmit)="onSubmit(myForm.value)">
+  <div class="modal-body">
+      <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com" [(ngModel)]="emailAddress" name="emailAddress">
+      </div>
+      <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="pwd" placeholder="password" [(ngModel)]="pwd" name="pwd">
+      </div>
+      <button type="submit" class="btn btn-primary">Login</button>
+  </div>
+</form>

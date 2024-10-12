@@ -1,0 +1,72 @@
+<!-- <p>card works!</p> -->
+
+<!-- <div class="row">
+    {{card.id}}
+    {{card.dish_ids}}
+    {{card.total}}
+</div> --> 
+
+<div class="modal-body">
+    <!-- <p>Modal body text goes here.</p> -->
+    <!-- <div *ngIf="arrproducts.length > 0">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let product of arrproducts">
+              <td>{{ product.p_name }}</td>
+              <td>{{ product.p_price }}</td>
+              <td>{{ product.p_quantity }}</td>
+              <td>{{ product.p_total_cost }}</td>
+            </tr>
+            <tr>
+              <td colspan="3" class="text-right"><strong>Total:</strong></td>
+              <td>{{ cart.total }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div> -->
+      <div *ngIf="arrproducts.length > 0">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let product of arrproducts; let i=index">
+              <td>{{ product.p_name }}</td>
+              <td>{{ product.p_price }}</td>
+              <td>
+                <!-- <button (click)="product.p_quantity = product.p_quantity - 1" [disabled]="product.p_quantity == 1">-</button> -->
+                <button (click)="handleminus(product.p_name)" [disabled]="product.p_quantity == 1">-</button>
+                <button (click)="handleplus(product.p_name)" >+</button>
+                {{ product.p_quantity }}
+                <!-- <button (click)="product.p_quantity = product.p_quantity + 1">+</button> -->
+               
+              </td>
+              <td>{{ product.p_total_cost }}</td>
+            </tr>
+            <tr>
+              <td colspan="3" class="text-right"><strong>Total:</strong></td>
+              <td>{{ cart.total }}</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+      
+    <!-- id:number
+    user_id:number
+    productarr:Product[]
+    total:number -->
+</div>

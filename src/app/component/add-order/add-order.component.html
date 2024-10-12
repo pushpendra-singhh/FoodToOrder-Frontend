@@ -1,0 +1,87 @@
+<!-- <p>add-order works!</p>  --> 
+
+<button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
+    {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
+</button>
+<mat-stepper [linear]="isLinear" #stepper style="background-color: #c2cad0;">
+    <mat-step [stepControl]="firstFormGroup">
+      <form [formGroup]="firstFormGroup" (ngSubmit)="saveFirstStepData(firstFormGroup)">
+        <ng-template matStepLabel>Fill out Order Details</ng-template>
+        <mat-form-field class="col-4">
+          <mat-label>Restaurant Id</mat-label>
+          <input matInput placeholder="restaurant id" formControlName="restaurant_id" required>
+        </mat-form-field>
+        <mat-form-field class="col-4">
+            <mat-label>Order Date</mat-label>
+            <input matInput placeholder="order date" formControlName="order_date" required>
+        </mat-form-field>
+        <mat-form-field class="col-4">
+            <mat-label>Dishes names</mat-label>
+            <input matInput placeholder="Dishes names" formControlName="dishes_names" required>
+        </mat-form-field>
+        <mat-form-field class="col-4">
+            <mat-label>Number of dishes</mat-label>
+            <input matInput placeholder="number of dishes" formControlName="num_of_dishes" required>
+        </mat-form-field>
+        <mat-form-field class="col-4">
+            <mat-label>User Id</mat-label>
+            <input matInput placeholder="user id" formControlName="user_id" required>
+        </mat-form-field>
+        <mat-form-field class="col-4">
+            <mat-label>Total Orders</mat-label>
+            <input matInput placeholder="total orders" formControlName="total_order" required>
+        </mat-form-field>
+        <mat-form-field class="col-4">
+            <mat-label>Payment Mode</mat-label>
+            <input matInput placeholder="Payment mode" formControlName="payment_mode" required>
+        </mat-form-field>
+        <div>
+            <button mat-raised-button matStepperNext type="submit" [disabled]="!firstFormGroup.valid">Save</button>
+        </div>
+        <div>
+          <button mat-button matStepperNext [disabled]="!firstFormGroup.valid">Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <!-- <mat-step [stepControl]="secondFormGroup" label="Fill out Dish id and Number of items">
+        <form [formGroup]="secondFormGroup" (ngSubmit)="saveSecondStepData(secondFormGroup.value)">
+            <div formArrayName="form_array_dishes">
+                <div class="row" *ngFor="let dish  of form_array_dishes().controls; let i = index" [formGroupName]="i">    
+                    <mat-form-field class="col-6">
+                        <mat-label>Dish Id</mat-label>
+                        <input matInput formControlName="number" placeholder="dish id">
+                    </mat-form-field>
+                    <mat-form-field class="col-6">
+                        <mat-label>Number of Item</mat-label>
+                        <input matInput formControlName="number" placeholder="number of item">
+                    </mat-form-field>
+                    <div class="col-3">
+                        <button class="float-left" mat-fab-button color="primary" aria-label="Remove/clear"
+                            (click)="removeOrClearAddress(i)" matTooltip="Remove">
+                            <mat-icon>highlight_off</mat-icon>
+                        </button>
+                        <button class="float-left mx-2" mat-fab-button color="primary" aria-label="Add"
+                            (click)="addAddressFormGroup()" matTooltip="Add">
+                            <mat-icon>add_circle_outline</mat-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button mat-raised-button matStepperNext type="submit" class="my-2">Save</button>
+            </div>
+            <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button matStepperNext>Next</button>
+            </div>
+        </form>
+    </mat-step> -->
+    <mat-step>
+        <ng-template matStepLabel>Done</ng-template>
+        <p>You are now done.</p>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button (click)="stepper.reset()">Reset</button>
+        </div>
+    </mat-step>
+</mat-stepper>

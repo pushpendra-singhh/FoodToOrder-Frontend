@@ -1,0 +1,46 @@
+<!-- <p>admin works!</p> -->
+
+<div class="row" id="admin_page">
+<mat-tab-group >
+    <mat-tab label="Users">
+        <mat-tab-group>
+            <mat-tab label="View Users">
+                <app-user-view></app-user-view>
+            </mat-tab>
+            <mat-tab label="Add User">
+                <app-user-add></app-user-add>
+            </mat-tab>
+            <mat-tab label="Update User">
+                <app-user-update></app-user-update>
+            </mat-tab>
+        </mat-tab-group>
+    </mat-tab>
+    <mat-tab label="Restaurants">
+        <mat-tab-group>
+            <mat-tab label="View Restaurants" class="boldstyle" >
+                <app-restaurant-view></app-restaurant-view>
+            </mat-tab>
+            <mat-tab label="Add Restaurant" class="boldstyle">
+                <app-restaurant-add></app-restaurant-add>
+            </mat-tab>
+            <mat-tab label="Update Restaurant" class="boldstyle">
+                <app-restaurant-update></app-restaurant-update>
+            </mat-tab>
+        </mat-tab-group>
+    </mat-tab>
+    <mat-tab label="Orders" class="boldstyle">
+        <mat-tab-group>
+            <mat-tab label="View Orders" class="boldstyle">
+                <app-view-order></app-view-order>
+            </mat-tab>
+            <mat-tab label="Add Order" class="boldstyle">
+                <app-add-order></app-add-order>
+            </mat-tab>
+            <mat-tab label="Update Order" class="boldstyle">
+                <app-update-order></app-update-order>
+            </mat-tab>
+        </mat-tab-group>
+    </mat-tab>
+</mat-tab-group>
+</div>
+  

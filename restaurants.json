@@ -1,0 +1,287 @@
+"restaurants": [
+    {
+      "id": 1,
+      "r_Name": "Banglore dosa special",
+      "r_Img_Path": "assets/images/dosa_image.jpeg",
+      "r_Addresses": [
+        {
+          "id": 1,
+          "house_No": 232,
+          "street": "5th Cross",
+          "area": "Mvm",
+          "city": "Blr",
+          "country": "India",
+          "pincode": "333301"
+        },
+        {
+          "id": 2,
+          "house_No": 254,
+          "street": "8th Cross",
+          "area": "Indira Nagar",
+          "city": "Blr",
+          "country": "India",
+          "pincode": "325624"
+        }
+      ],
+      "r_Dishes": [
+        {
+          "id": 1,
+          "d_Name": "Veg-Biryani",
+          "d_Cost": 145,
+          "d_Description": "tasty biryani with lot of veg",
+          "d_Category": "Lunch/Dinner",
+          "d_Composition": "Rice and Veg",
+          "d_Type": "Veg"
+        },
+        {
+          "id": 2,
+          "d_Name": "Idli",
+          "d_Cost": 45,
+          "d_Description": "soft idli with sambar and chutney",
+          "d_Category": "Breakfast",
+          "d_Composition": "rice and Veg",
+          "d_Type": "Veg"
+        },
+        {
+          "id": 3,
+          "d_Name": "Masala Dosa",
+          "d_Cost": 80,
+          "d_Description": "crunchy dosa with potato and veg",
+          "d_Category": "Breakfast",
+          "d_Composition": "Bread and Veg",
+          "d_Type": "Veg"
+        }
+      ],
+      "category_id": 3
+    },
+    {
+      "id": 2,
+      "r_Name": "Annapurna tiffin centre",
+      "r_Img_Path": "assets/images/annapurna_tiffin_centre.jpeg",
+      "r_Addresses": [
+        {
+          "id": 1,
+          "house_No": 23,
+          "street": "1st Cross",
+          "area": "Mvm",
+          "city": "Blr",
+          "country": "India",
+          "pincode": "332533"
+        },
+        {
+          "id": 2,
+          "house_No": 95,
+          "street": "9th Cross",
+          "area": "Indira Nagar",
+          "city": "Blr",
+          "country": "India",
+          "pincode": "985644"
+        }
+      ],
+      "r_Dishes": [
+        {
+          "id": 1,
+          "d_Name": "Masala Dosa",
+          "d_Cost": 60,
+          "d_Description": "best dosa with potato and veg",
+          "d_Category": "Breakfast",
+          "d_Composition": "Bread and Veg",
+          "d_Type": "Veg"
+        },
+        {
+          "id": 2,
+          "d_Name": "Idli",
+          "d_Cost": 30,
+          "d_Description": "Make of rice power and veg",
+          "d_Category": "Breakfast",
+          "d_Composition": "Bread and Veg",
+          "d_Type": "Veg"
+        },
+        {
+          "id": 3,
+          "d_Name": "Lemon-rice",
+          "d_Cost": 40,
+          "d_Description": "tasty lemon rice with lot of chutney",
+          "d_Category": "Lunch/Dinner",
+          "d_Composition": "Rice and Veg",
+          "d_Type": "Veg"
+        }
+      ],
+      "category_id": 3
+    },
+    {
+      "id": 3,
+      "r_Name": "Weekenzo restaurants",
+      "r_Img_Path": "assets/images/weekenzo.jpeg",
+      "r_Addresses": [
+        {
+          "id": 1,
+          "house_No": "91",
+          "street": "7th Main Road",
+          "area": "Mvm",
+          "city": "Bangalore",
+          "country": "India",
+          "pincode": "560329"
+        }
+      ],
+      "r_Dishes": [
+        {
+          "id": 1,
+          "d_Name": "Fried Chicken Wings",
+          "d_Cost": "400",
+          "d_Description": "tasty fried chiecken wings with chilli speice",
+          "d_Category": "Lunch/Dinner",
+          "d_Composition": "Chinken wings , besen and chilli power",
+          "d_Type": "non-veg"
+        }
+      ],
+      "category_id": 6
+    },
+    {
+      "id": 4,
+      "r_Name": "Laxmi Sweet & Snacks House",
+      "r_Img_Path": "assets/images/Laxmi_misthan_bhandar.jpg",
+      "r_Addresses": [
+        {
+          "id": 1,
+          "house_No": "321",
+          "street": "4th Cross",
+          "area": "whitestreet",
+          "city": "Blr",
+          "country": "India",
+          "pincode": "569611"
+        },
+        {
+          "id": 2,
+          "house_No": "927",
+          "street": "5th Cross",
+          "area": "Indira Nagar",
+          "city": "Blr",
+          "country": "India",
+          "pincode": "360012"
+        },
+        {
+          "id": 3,
+          "house_No": "168",
+          "street": "6th Cross",
+          "area": "Indira Nagar",
+          "city": "Blr",
+          "country": "India",
+          "pincode": "560012"
+        }
+      ],
+      "r_Dishes": [
+        {
+          "id": 1,
+          "d_Name": "Veg Burgar",
+          "d_Cost": "80",
+          "d_Description": "tasty veg burgar",
+          "d_Category": "snacks",
+          "d_Composition": "bread and vegitable",
+          "d_Type": "veg"
+        },
+        {
+          "id": 2,
+          "d_Name": "Ras Malai",
+          "d_Cost": "560",
+          "d_Description": "tasty sweet",
+          "d_Category": "sweet",
+          "d_Composition": "milk and dry fruits",
+          "d_Type": "veg"
+        }
+      ],
+      "category_id": 5
+    },
+    {
+      "id": 5,
+      "r_Name": "Maxim Indo-chinese Restaurent",
+      "r_Img_Path": "assets/images/maxim indo_chinese.jpg",
+      "r_Addresses": [
+        {
+          "id": 1,
+          "house_No": "136",
+          "street": "elecronic city",
+          "area": "Indira Nagar",
+          "city": "Bangalore",
+          "country": "India",
+          "pincode": "566327"
+        }
+      ],
+      "r_Dishes": [
+        {
+          "id": 1,
+          "d_Name": " chinese noodles",
+          "d_Cost": "299",
+          "d_Description": "tasty noodles",
+          "d_Category": "Lunch/Dinner",
+          "d_Composition": "noodles and vegitable",
+          "d_Type": "veg"
+        },
+        {
+          "id": 2,
+          "d_Name": "Burger",
+          "d_Cost": "149",
+          "d_Description": "combination of veg and bread with lot of tasty speices",
+          "d_Category": "Snacks",
+          "d_Composition": "Soft bread, green veg and souce and chicken",
+          "d_Type": "veg/non-veg"
+        },
+        {
+          "id": 3,
+          "d_Name": "Coffee",
+          "d_Cost": "49",
+          "d_Description": "tasty coffee",
+          "d_Category": "anytime",
+          "d_Composition": "milk and coffee powder",
+          "d_Type": "veg"
+        }
+      ],
+      "category_id": 4
+    },
+    {
+      "id": 6,
+      "r_Name": "NH88 Best Taste",
+      "r_Img_Path": "https://shorturl.at/jtKX0",
+      "r_Addresses": [
+        {
+          "id": 1,
+          "house_No": "fghhfgh",
+          "street": "fghgh",
+          "area": "jhjhjhjh",
+          "city": "fhhgfhfgh",
+          "country": "India",
+          "pincode": "fhghfgh"
+        }
+      ],
+      "r_Dishes": [
+        {
+          "id": 1,
+          "d_Name": "combo meal",
+          "d_Cost": "151",
+          "d_Description": "full meal",
+          "d_Category": "heavy food",
+          "d_Composition": "veg",
+          "d_Type": "veg"
+        }
+      ],
+      "category_id": 1
+    },
+    {
+      "id": 7,
+      "r_Name": "gfgfg",
+      "r_Img_Path": "gfgfg",
+      "r_Addresses": [],
+      "r_Dishes": [
+        {
+          "id": 1,
+          "d_Name": "gfgf",
+          "d_Cost": "45454",
+          "d_Description": "dfdfsa",
+          "d_Category": "3fdf",
+          "d_Composition": "dssfg",
+          "d_Type": "fggf"
+        }
+      ],
+      "category_id": 0
+    }
+  ],

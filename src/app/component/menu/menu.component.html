@@ -1,0 +1,30 @@
+<!-- <p>menu works!</p> --> 
+
+<div class="row">
+    <table class="table table-hover">
+      <thead style="background-color:rgb(237, 194, 194);">
+        <th>Dish Name</th>
+        <th>Dish Cost</th>
+        <th>Dish Description</th>
+        <th>Dish Category</th>
+        <th>Dish Composition</th>
+        <th>Dish Type</th>
+      </thead>
+      <tbody>
+          <tr *ngFor="let d of dishes">
+              <td>{{d.d_Name}}</td>
+              <td>{{d.d_Cost}}</td>
+              <td>{{d.d_Description}}</td>
+              <td>{{d.d_Category}}</td>
+              <td>{{d.d_Composition}}</td>
+              <td>{{d.d_Type}}</td>
+              <!-- <td><a [routerLink]="['/card,id']"><button class="btn btn-primary">Add to Cart</button></a></td> -->
+              <td><a (click)="addToCart(d)" ><button class="btn btn-primary" [disabled]="na_dishes[d.id]">Add to Cart</button></a></td>
+
+
+              <!-- [routerLink]="['/card', d.id]" -->
+
+          </tr>
+      </tbody>
+    </table>
+</div>
